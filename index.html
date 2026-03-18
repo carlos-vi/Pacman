@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pac-Man (Arrow Keys)</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hud">
+        <div class="hud__title">
+          <h1>Pac-Man</h1>
+          <p class="subtitle">Move with Arrow Keys</p>
+        </div>
+        <div class="hud__right">
+          <div class="score">
+            Score: <span id="score">0</span>
+          </div>
+          <div id="message" class="message" role="status" aria-live="polite"></div>
+          <div class="tips">
+            Press <kbd>R</kbd> to restart
+          </div>
+        </div>
+      </header>
+
+      <section class="game">
+        <canvas id="game" width="504" height="504" aria-label="Pac-Man game canvas"></canvas>
+      </section>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
+
